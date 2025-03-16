@@ -28,3 +28,4 @@ class Scroller:
     def update_scroll_position(self) -> None:
         self.current_position = self.driver.execute_script("return window.pageYOffset;")
         pass
+
