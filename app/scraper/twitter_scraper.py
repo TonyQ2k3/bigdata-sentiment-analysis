@@ -487,14 +487,8 @@ It may be due to the following:
 
         pass
 
-    def save_to_csv(self):
-        print("Saving Tweets to CSV...")
-        now = datetime.now()
-        folder_path = "./tweets/"
-
-        if not os.path.exists(folder_path):
-            os.makedirs(folder_path)
-            print("Created Folder: {}".format(folder_path))
+    def save_tweets(self):
+        print("Saving Tweets...")
 
         data = {
             "Name": [tweet[0] for tweet in self.data],

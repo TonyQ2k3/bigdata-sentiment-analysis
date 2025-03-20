@@ -16,7 +16,6 @@ except Exception as e:
 def main(
     max=10,
     query=None,
-    
     ):
     USER_UNAME = os.environ['TWITTER_USERNAME']
     USER_PASSWORD = os.environ['TWITTER_PASSWORD']
@@ -30,11 +29,8 @@ def main(
         scraper.scrape_tweets(
             max_tweets=max,
             scrape_query=str(query),
-            # scrape_top=True,
-            # scrape_latest=False,
-            # scrape_poster_details=True,
         )
-        dataframe = scraper.save_to_csv()
+        dataframe = scraper.save_tweets()
         return dataframe
     else:
         print("Please provide a valid username and password")

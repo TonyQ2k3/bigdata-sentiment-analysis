@@ -20,3 +20,14 @@ class Progress:
                 progress_bar, progress, current, self.total
             )
         )
+        
+        
+    # def print_progress(self, current) -> None:
+    #     # Update the current value
+    #     self.current = current
+    #     label = st.empty()
+    #     # Calculate the progress
+    #     progress = current / self.total
+    #     # Display the progress
+    #     label.text(f"Progress: {progress:.2%} {current} of {self.total}")
+    #     st.progress(progress)
