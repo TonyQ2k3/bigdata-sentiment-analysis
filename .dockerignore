@@ -1,0 +1,13 @@
+# Ignore the .git directory
+.git
+
+# Ignore Dockerfile and .dockerignore itself (if not needed in the image)
+Dockerfile
+docker-compose.yaml
+.dockerignore
+
+.env
+data/twitter_data.csv
+kubernetes
+notebooks
+spark
